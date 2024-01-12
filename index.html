@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+
+
+    <!--Todas essas fontes google vem antes do main.css porque o main.css deve ser o último a ser carregado-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@700&display=swap" rel="stylesheet">
+
+    <!--Icones boostrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    <header class="navbar navbar-expand-lg sticky-top" id="cabecalho">
+        <div class="container">
+            <h1 class="navbar-brand m-0">M2 - EDUCAÇÃO</h1>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao">
+                <ul class="nav nav-pills p-4 d-block d-md-flex"> <!--d-block (display block)  d-md-flex (a partir de tela md media o display é flex)-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobre">
+                            <i class="bi bi-house-door me-1"></i>
+                            Sobre o escola
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#professores">
+                            <i class="bi bi-calendar-check me-1"></i>
+                            Professores
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#cursos">
+                            <i class="bi bi-card-text me-1"></i>
+                            Cursos
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#fale-conosco">
+                            <i class="bi bi-chat-left-text me-1"></i>
+                            Fale Conosco
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#faq">
+                            <i class="bi bi-question-circle me-1"></i>
+                            FAQ
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div data-bs-spy="scroll" data-bs-target="#cabecalho" data-bs-smooth-scroll='true'> <!--O data-bs-smooth-scroll permite que quando clicarmos em uma seção, ele role para o início-topo da seção (mostrando o título)-->
+        <section id="sobre">
+            <div class="div_carousel">
+                <div class="carousel slide" id="carousel-principal">
+                    <div class="carousel-inner" data-bs-ride="carousel">
+                        <div class="carousel-item active" data-bs-interval="3000">
+                            <p class="text-center">
+                                "Este sem dúvidas foi o melhor curso que já fiz"
+                            </p>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="3000">
+                            <p class="text-center">"Consegui mudar de área graças ao curso. Obrigado!"</p>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="3000">
+                            <p class="text-center">"Obtive muito conhecimento durante o curso. Aplico todos os dias"</p>
+                        </div>
+                    </div>
+        
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel-principal" data-bs-slide="prev">
+                        <span class="span carousel-control-prev-icon"></span>
+                    </button>
+        
+                    <button class="carousel-control-next" type="button" data-bs-target="#carousel-principal" data-bs-slide="next">
+                        <span class="span carousel-control-next-icon"></span>
+                    </button>
+                    
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carousel-principal" data-bs-slide-to="0" class="active"></button>
+                        <button type="button" data-bs-target="#carousel-principal" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#carousel-principal" data-bs-slide-to="2"></button>
+                    </div>
+        
+                </div>
+
+            </div>
+            
+    
+    
+            <div class="container pt-5 pb-5">
+                <div class="row">
+                    <div class="col-md-5">
+                        <img src="https://cdn.pixabay.com/photo/2016/06/07/23/12/letter-1442857_1280.png" class="d-block w-100 rounded" alt="Logo da empresa">
+                    </div>
+    
+                    <div class="col-md-7 mt-3 mt-md-0"> <!--"O mt-md-0" permite que a partir de uma tela média, o margin top (mt) seja zero-->
+                        <h2 class="section-title">Sobre <span>a escola</span></h2>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto neque at ducimus numquam est et! Officia animi fuga, odit iste aliquid eveniet? Amet ipsum sint omnis quis beatae magni voluptatum.
+                        </p>
+                        <h3 class="section-title">Sobre <span>as áreas de atuação</span></h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, id, recusandae nihil iusto vitae ex hic assumenda cupiditate sapiente maiores atque omnis quod quia libero culpa non odit consectetur minima.
+                        </p>
+                        <ul>
+                            <li>
+                                TI
+                            </li>
+                            <li>
+                                FINANÇAS
+                            </li>
+                            <li>
+                                DESIGN
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="professores" class="pt-5 pb-5 mt-5 mb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center">PROFESSORES</h2>
+                </div>
+
+                <nav class="nav nav-tabs">
+                    <button type="button" class="nav-link active" data-bs-toggle="tab" data-bs-target="#professor_ti">TI</button>
+                    <button type="button" class="nav-link" data-bs-toggle="tab" data-bs-target="#professor_financas">FINANÇAS</button>
+                    <button type="button" class="nav-link" data-bs-toggle="tab" data-bs-target="#professor_marketing">MARKETING</button>
+                </nav>
+
+                <div class="tab-content">
+                    <div class="tab-pane active" id="professor_ti">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <img class="w-100 mt-2" src="https://media.istockphoto.com/id/1699144816/pt/foto/confident-young-african-woman-teacher-tutor-wearing-glasses-posing-with-books-on-beige.webp?s=1024x1024&w=is&k=20&c=Znws8iMmNkFUMX1mw_jIIjF66pbELM0QbRk4tvBeIhY=" alt="">
+                            </div>
+
+                            <div class="col-md-7">
+                                <h3 class="text-center mb-3 mt-3">Prof. Fulana</h3>
+                                
+                                <p class="text-center centralizar_vertical">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum perspiciatis voluptatem laudantium, nobis aperiam explicabo possimus, magnam magni quis, non expedita. Vero maxime non harum, excepturi ut velit ex aliquam.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane" id="professor_financas">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <img class="w-100 mt-2" src="https://media.istockphoto.com/id/1328488607/pt/foto/portrait-of-african-american-female-teacher-smiling-in-the-class-at-school.webp?s=1024x1024&w=is&k=20&c=kmcWBTR4aCQzcFe2PJ4HpJvBAyqITuIVHgCjvJxhQdE=" alt="">
+                            </div>
+
+                            <div class="col-md-7">
+                                <h3 class="text-center mb-3 mt-3">Prof. Ciclana</h3>
+                                <p class="text-center">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum perspiciatis voluptatem laudantium, nobis aperiam explicabo possimus, magnam magni quis, non expedita. Vero maxime non harum, excepturi ut velit ex aliquam.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane" id="professor_marketing">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <img class="w-100 mt-2" src="https://media.istockphoto.com/id/1699144816/pt/foto/confident-young-african-woman-teacher-tutor-wearing-glasses-posing-with-books-on-beige.webp?s=1024x1024&w=is&k=20&c=Znws8iMmNkFUMX1mw_jIIjF66pbELM0QbRk4tvBeIhY=" alt="">
+                            </div>
+
+                            <div class="col-md-7">
+                                <h3 class="text-center mb-3 mt-3">Prof. Beutrana</h3>
+                                <p class="text-center">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum perspiciatis voluptatem laudantium, nobis aperiam explicabo possimus, magnam magni quis, non expedita. Vero maxime non harum, excepturi ut velit ex aliquam.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>                
+            </div>
+        </section>
+
+
+        <section id="cursos" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center mb-5">Nossos <span>cursos</span></h2>
+                </div>
+                <div class="row">
+                    <aside class="col-md-2">
+                        <nav class="nav nav-pills flex-column nav-carpadio">
+                            <button data-bs-toggle="tab" data-bs-target="#curso_ti" type="button" class="fw-bold text-start nav-link text-colored active">TI</button>
+                            <button data-bs-toggle="tab" data-bs-target="#curso_financas" type="button" class="fw-bold text-start nav-link text-colored">Finanças</button>
+                            <button data-bs-toggle="tab" data-bs-target="#curso_marketing" type="button" class="fw-bold text-start nav-link text-colored">Marketing</button>
+                        </nav>
+                    </aside>
+                    <div class="col-md-10">
+                        <div class="tab-content">   
+                            <div class="tab-pane active" id="curso_ti">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="card">
+                                            <img src="https://cdn.pixabay.com/photo/2017/05/14/03/45/data-2311261_1280.png">
+                                            <div class="card-img-overlay">
+                                                <h4 class="card-title text-center mb-5">Análise de dados</h4>
+                                                <p class="card-text">
+                                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente cum quisquam, recusandae ut reiciendis quaerat illum tempore! Laborum nihil pariatur dolor saepe incidunt nam aliquam, fuga architecto? Molestiae, ea ratione.
+                                                </p>
+                                            </div>
+                                            <button type="button" class="btn btn-success">Tenho interesse</button>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="card">
+                                            <img src="https://cdn.pixabay.com/photo/2014/05/27/23/32/matrix-356024_1280.jpg">
+                                            <div class="card-img-overlay">
+                                                <h4 class="card-title text-center mb-5">Programação</h4>
+                                                <p class="card-text">
+                                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente cum quisquam, recusandae ut reiciendis quaerat illum tempore! Laborum nihil pariatur dolor saepe incidunt nam aliquam, fuga architecto? Molestiae, ea ratione.
+                                                </p>
+                                            </div>
+                                            <button type="button" class="btn btn-success">Tenho interesse</button>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+
+
+                            <div class="tab-pane" id="curso_financas">
+                                <div class="row justify-content-around">
+                                    <div class="col-md-4">
+                                        <div class="card">
+                                            <div class="card-header">
+                                                <h6 class="text-center">Gestão de patrimônio</h6>
+                                            </div>
+                                            <img src="https://cdn.pixabay.com/photo/2017/10/08/20/29/money-2831511_1280.png" alt="">
+                                            <div class="card-body">
+                                                <div class="card-title">
+                                                    Gestão de patrimônio
+                                                </div>
+                                                <div class="card-text">
+                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab distinctio unde exercitationem ad, voluptates, doloremque recusandae esse fuga amet tempora dicta dignissimos sit. Animi quisquam officia illum ad libero temporibus.</p>
+                                                </div>
+                                                <div class="card-footer">
+                                                    Carga horária: 50 horas
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="card">
+                                            <div class="card-header">
+                                                <h6 class="text-center">Gestão de patrimônio</h6>
+                                            </div>
+                                            <img src="https://cdn.pixabay.com/photo/2019/02/17/14/38/business-4002339_1280.jpg" alt="">
+                                            <div class="card-body">
+                                                <div class="card-title">
+                                                    Gestão de patrimônio
+                                                </div>
+                                                <div class="card-text">
+                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab distinctio unde exercitationem ad, voluptates, doloremque recusandae esse fuga amet tempora dicta dignissimos sit. Animi quisquam officia illum ad libero temporibus.</p>
+                                                </div>
+                                                <div class="card-footer">
+                                                    Carga horária: 50 horas
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane" id="curso_marketing">
+                                <div class="row justify-content-around">
+                                    <div class="col-md-5">
+                                        <div class="card text-bg-dark">
+                                            <div class="card-header">
+                                                Redes Sociais
+                                            </div>
+                                            <img src="https://cdn.pixabay.com/photo/2018/11/29/21/51/social-media-3846597_1280.png" alt="">
+                                            <div class="card-body">
+                                                <h4 class="card-title">Redes Sociais</h4>
+                                                <div class="card-text">
+                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At adipisci, non dolore fuga ipsa reprehenderit. Ex voluptatibus reprehenderit aspernatur atque dolor perspiciatis quos itaque odit temporibus. Tempore et saepe molestias.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="card text-bg-dark">
+                                            <div class="card-header">
+                                                Propaganda
+                                            </div>
+                                            <img src="https://cdn.pixabay.com/photo/2017/01/31/21/44/electronics-2027497_1280.png" alt="">
+                                            <div class="card-body">
+                                                <h4 class="card-title">Propagandas</h4>
+                                                <div class="card-text">
+                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At adipisci, non dolore fuga ipsa reprehenderit. Ex voluptatibus reprehenderit aspernatur atque dolor perspiciatis quos itaque odit temporibus. Tempore et saepe molestias.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="fale-conosco" class="pt-5 pb-5">
+            <div class="container">
+                <h2 class="section-title text-center">Fale <span>conosco</span></h2>
+            
+
+                <div class="row">
+                    
+                    <div class="col-md-7 mb-5">
+                        <form id="formulario_dados">
+                            <div class="div mb-3">
+                                <label for="nome" class="form-label fw-bold text-colored">Nome</label>
+                                <input id="nome" type="text" class="form-control" required>
+                            </div>
+
+                            <div class="div mb-3">
+                                <label for="email" class="form-label fw-bold text-colored">Email</label>
+                                <input id="email" type="email" class="form-control" required>
+                            </div>
+
+                            
+                            <div class="div mb-3">
+                                <label for="telefone" class="form-label fw-bold text-colored">Seu telefone (opcional)</label>
+                                <input id="telefone" type="tel" class="form-control">
+                            </div>
+
+                            <div class="div mb-3">
+                                <label for="msg" class="form-label fw-bold text-colored">Sua mensagem</label>
+                                <textarea id="msg" class="form-control" required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn fw-bold">Enviar</button>
+                        </form>
+                    </div>
+
+                    <div class="col-md-5">
+                        <div class="row">
+                            <h3 class="section-title fs-4 text-colored">
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                Redes Sociais
+                            </h3>
+                            <ul>
+                                <li class="fs-5"> <!--Os ícones são arquivos de fonte, então o ajuste de tamanho é pelo fontsize (fs)-->
+                                    <a href="#">
+                                        <i class="bi' bi-facebook text-colored"></i>
+                                    </a>
+                                </li>
+
+                                <li class="fs-5">
+                                    <a href="#">
+                                        <i class="bi bi-instagram text-colored ms-1 me-1"></i>
+                                    </a>
+                                </li>
+
+                                <li class="fs-5">
+                                    <a href="#">
+                                        <i class="bi bi-whatsapp text-colored"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="row">
+                            <h3 class="section-title fs-4 text-colored mt-4">
+                                <i class="bi bi-cursor-fill"></i>
+                                Endereço
+                            </h3>
+                            <p>Rua Teste Exemplo, 145 - BootStrap - SP SP</p>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+        </section>
+
+        <section id="faq" class="pt-10 pb-10">
+            <div class="container">
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#resposta1">
+                                Quanto tempo terei acesso?
+                            </button>
+
+                            <div id="resposta1" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                    Acesso vitalício
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#resposta2">
+                                Existe diploma?
+                            </button>
+
+                            <div id="resposta2" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                    Sim, após concluir o curso.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+
+    <script src="./Jquery plugin mask/jquery.mask.min.js"></script>
+    <script src="./Jquery plugin validation/jquery.validate.min.js"></script>
+    <script src="./Jquery plugin validation/messages_pt_BR.min.js"></script>
+    
+    <script src="./main.js"></script>
+</body>
+</html>
